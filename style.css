@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template: max-content calc(100vh) / 
+        max-content minmax(600px, 1fr);
+    gap: 20px;
+    padding-right: 20px;
+}
+
+
+
+/* Sidebar Section */
+
+.sidebar {
+    background-color: black;
+    display: grid;
+    grid-area: 1 / 1 / 4 / 2;
+    grid-auto-rows: max-content;
+    grid-template: max-content / max-content;
+    padding: 30px;
+    row-gap: 35px;
+}
+
+#sidebar-title {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(165, 161, 161);
+}
+
+.sidebar a {
+    background-color: white;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    padding-left: 50px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(205, 199, 199); 
+}
+
+#home {
+    background-image: url(img/home.svg);
+}
+
+#profile{
+    background-image: url(img/home.svg);
+}
+
+#messages {
+    background-image: url(img/home.svg);
+}
+
+#history {
+    background-image: url(img/home.svg);
+}
+
+#tasks {
+    background-image: url(img/home.svg);
+}
+
+#communities {
+    background-image: url(img/home.svg);
+}
+
+#settings {
+    background-image: url(img/home.svg);
+}
+
+#support {
+    background-image: url(img/home.svg);
+}
+
+#privacy {
+    background-image: url(img/home.svg);
+}
+
+
+
+/* Header Section */
+
+.header {
+    background-color: white;
+    
+}
+
+
+
+/* Main Content Section */
+
+.main-content {
+    background-color: rgb(210, 210, 210);
+}
