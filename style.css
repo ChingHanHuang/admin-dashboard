@@ -43,11 +43,10 @@ body {
 }
 
 .sidebar a {
-    background-color: white;
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 40px 40px;
-    padding-left: 50px;
+    padding-left: 60px;
     text-decoration: none;
     font-size: 1.5rem;
     color: rgb(205, 199, 199); 
@@ -58,35 +57,35 @@ body {
 }
 
 #profile{
-    background-image: url(img/home.svg);
+    background-image: url(img/profile.svg);
 }
 
-#messages {
-    background-image: url(img/home.svg);
+#message {
+    background-image: url(img/messages.svg);
 }
 
 #history {
-    background-image: url(img/home.svg);
+    background-image: url(img/history.svg);
 }
 
 #tasks {
-    background-image: url(img/home.svg);
+    background-image: url(img/tasks.svg);
 }
 
 #communities {
-    background-image: url(img/home.svg);
+    background-image: url(img/communities.svg);
 }
 
 #settings {
-    background-image: url(img/home.svg);
+    background-image: url(img/settings.svg);
 }
 
 #support {
-    background-image: url(img/home.svg);
+    background-image: url(img/support.svg);
 }
 
 #privacy {
-    background-image: url(img/home.svg);
+    background-image: url(img/privacy.svg);
 }
 
 
