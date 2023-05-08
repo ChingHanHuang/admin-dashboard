@@ -19,11 +19,6 @@ const projectConfig = [
     projectImgUrl: "img/project-img/rock-paper-scissors.png",
     href: "https://chinghanhuang.github.io/rock-paper-scissors/",
   },
-  {
-    title: "Library",
-    projectImgUrl: "img/project-img/sign-up-form.png",
-    href: "",
-  },
 ];
 
 const createPrjCards = () => {
