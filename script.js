@@ -2,12 +2,27 @@ const projectConfig = [
   {
     title: "Sigh-up Form",
     projectImgUrl: "img/project-img/sign-up-form.png",
-    description: "123456789",
+    href: "https://chinghanhuang.github.io/sign-up-form/",
+  },
+  {
+    title: "Etch-a-Sketch",
+    projectImgUrl: "img/project-img/etch-a-sketch.png",
+    href: "https://chinghanhuang.github.io/etch-a-sketch/",
+  },
+  {
+    title: "Calculator",
+    projectImgUrl: "img/project-img/calculator.png",
+    href: "https://chinghanhuang.github.io/calculator/",
+  },
+  {
+    title: "Rock, Paper, Scissors",
+    projectImgUrl: "img/project-img/rock-paper-scissors.png",
+    href: "https://chinghanhuang.github.io/rock-paper-scissors/",
   },
   {
     title: "Library",
     projectImgUrl: "img/project-img/sign-up-form.png",
-    description: "123456789123456789123456789123123",
+    href: "",
   },
 ];
 
@@ -23,7 +38,7 @@ const createPrjCard = (project) => {
   let projectCard = document.createElement("div");
   projectCard.classList.add("project-card");
 
-  let projectImg = createPrjImg(project.projectImgUrl);
+  let projectImg = createPrjImg(project);
   let projectContent = creatPrjContent(project);
   let cardControls = createCardControls();
 
@@ -34,20 +49,20 @@ const createPrjCard = (project) => {
   return projectCard;
 };
 
-const createPrjImg = (imgUrl) => {
-  let projectImg = document.createElement("div");
+const createPrjImg = (project) => {
+  let projectImg = document.createElement("a");
   projectImg.classList.add("project-image");
-  projectImg.style.backgroundImage = `url(${imgUrl})`;
+  projectImg.style.backgroundImage = `url(${project.projectImgUrl})`;
+  projectImg.href = project.href;
+  projectImg.target = "_blank";
   return projectImg;
 };
 
 const creatPrjContent = (project) => {
   let projectContent = document.createElement("div");
   let projectTitle = createPrjTitle(project.title);
-  let projectDescription = createPrjDescription(project.description);
 
   projectContent.appendChild(projectTitle);
-  projectContent.appendChild(projectDescription);
 
   return projectContent;
 };
@@ -56,12 +71,6 @@ const createPrjTitle = (title) => {
   let projectTitle = document.createElement("h2");
   projectTitle.innerText = title;
   return projectTitle;
-};
-
-const createPrjDescription = (description) => {
-  let projectDescription = document.createElement("p");
-  projectDescription.innerHTML = description;
-  return projectDescription;
 };
 
 const createCardControls = () => {
